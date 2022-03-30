@@ -120,3 +120,43 @@
 
 ### **Target Audience**
  - The site is primarily aimed and adults/young adults who are either big readers and want to find thier next book, or people who want to read more but aren't sure what to read.
+
+
+## **Code Used**
+
+ The site is build using:
+ - *HTML* to provide the site's structure and features, for example the contact form.
+
+ - *CSS* to add style to the site, for example the font of the typography.
+
+ - *PYTHON* to add the backend functionality to the site, for example sending data to the database.
+
+ - *JQUERY* to offer interactivity to the site, for example dropdown menus.
+
+
+### **Frameworks**
+
+ - *MATERIALIZE CSS* is used to help style the site, and add some features to the site using JQUERY. The code used by Materialize is marked. I chose to work with Materialize, as it incorporated bootstrap, that helps with the making the site mobile 
+ friendly, and also to challenge myself with learning a new framework. Materialize may help with styling, but there can be some
+ speificity issues when using it. For example some issues I had with using it included: trying to size images in the carousel, and the header images on the home and reviews pages. (The former has been resolved, but the latter is still not fullwidth). 
+
+ - *FLASK* is a framework and is used to help with the structuring of Python, and can be seen in the site using the for loops on the homepage that get the books from the server {% for books in books2 %}
+
+ - *Jinja Template* is used to render the templates and write code similar to Python. For example: render_template(signup.html)
+
+
+### **Files Made**
+
+ - There were 9 HTML files made in this project, 2 python files, a JavaScript file, a CSS file, a Procfile and requirements.txt file. 
+
+ - Most can be viewed on GitHUb, however the env.py file, that was created to connnect the database with the site, contains 
+   sensitve information, and has not been pushed to GitHub.
+
+ - The HTML files are stored in the templates folder, as they form the basis of the site, and it helps structure and organise 
+   the code. 
+
+ - The static folder contains the JavaScript and CSS files, and is used to help structure the code files, and keep things orderly.
+
+ - The app.py file provides the backend code that handles the data of the site. It is used for submitting data to the database and pulling information from the database. 
+
+ - The env.py file that was created contains information regarding the database and has not been pushed to GitHub.
