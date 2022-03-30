@@ -143,6 +143,19 @@
             {% endfor %}
         </div>
     </li>
+    <li>
+        <div class="collapsible-header white-text blue accent-3 text-shadow">
+            <i class="fas fa-caret-down"></i>
+            {% for genres in genres %}
+            <strong>{{ genres.genre_horror }}</strong>
+            {% endfor %}
+        </div>
+        <div class="collapsible-body">
+            {% for books in books2 %}
+            <strong>{{ books.horror_books_and_authors }}</strong>
+            {% endfor %}
+        </div>
+    </li>
 </ul>
 
 {% endblock %}
