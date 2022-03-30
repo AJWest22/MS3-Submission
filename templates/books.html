@@ -73,7 +73,7 @@
         </div>
         <div class="collapsible-body">
             {% for book in books2 %}
-            <strong>{{ books2.fantasy_books_and_authors }}</strong>
+            <strong>{{ book.fantasy_books_and_authors }}</strong>
             {% endfor %}
         </div>
     </li>
@@ -86,7 +86,7 @@
         </div>
         <div class="collapsible-body">
             {% for book in books2 %}
-            <strong>{{ books2.scifi_books_and_authors }}</strong>
+            <strong>{{ book.scifi_books_and_authors }}</strong>
             {% endfor %}
         </div>
     </li>
@@ -99,8 +99,7 @@
         </div>
         <div class="collapsible-body">
             {% for book in books2 %}
-            <strong>{{ books2.crime_books_and_authors }}</strong>
-            <p>{{ books2.crime_authors }}</p>
+            <strong>{{ book.crime_books_and_authors }}</strong>
             {% endfor %}
         </div>
     </li>
@@ -113,7 +112,7 @@
         </div>
         <div class="collapsible-body">
             {% for book in books2 %}
-            <strong>{{ books2.thriller_books_and_authors }}</strong>
+            <strong>{{ book.thriller_books_and_authors }}</strong>
             {% endfor %}
         </div>
     </li>
@@ -126,7 +125,7 @@
         </div>
         <div class="collapsible-body">
             {% for book in books2 %}
-            <strong>{{ books2.nonfiction_books_and_authors }}</strong>
+            <strong>{{ book.nonfiction_books_and_authors }}</strong>
             {% endfor %}
         </div>
     </li>
@@ -139,7 +138,7 @@
         </div>
         <div class="collapsible-body">
             {% for book in books2 %}
-            <strong>{{ books2.war_books_and_authors }}</strong>
+            <strong>{{ book.war_books_and_authors }}</strong>
             {% endfor %}
         </div>
     </li>
@@ -152,7 +151,7 @@
         </div>
         <div class="collapsible-body">
             {% for book in books2 %}
-            <strong>{{ books2.horror_books_and_authors }}</strong>
+            <strong>{{ book.horror_books_and_authors }}</strong>
             {% endfor %}
         </div>
     </li>
@@ -165,7 +164,7 @@
         </div>
         <div class="collapsible-body">
             {% for book in books2 %}
-            <strong>{{ books2.action_books_and_authors }}</strong>
+            <strong>{{ book.action_books_and_authors }}</strong>
             {% endfor %}
         </div>
     </li>
