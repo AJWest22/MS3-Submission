@@ -23,3 +23,10 @@
     font-family: Oswald;
     font-size: 4em;
 }
+
+.sub-text {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1em;
+    margin: 2em;
+}
