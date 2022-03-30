@@ -30,6 +30,32 @@ def get_books():
     return render_template("books.html", books2=book, genres=genre)
 
 
+@app.route("/signup", methods=["GET", "POST"])
+def signup():
+    """
+    Allows users to create an account, and post
+    the details to the server.
+    """
+    if request.method == "POST":
+        existing_user = mongo.db.users.find_one(
+            {"username": request.form.get("username").lower()})
+
+        if existing_user:
+            flash("Username already exists")
+            return redirect(url_for("signup"))
+        signup = {
+            "username": request.form.get("username").lower(),
+            "password": generate_password_hash(request.form.get("password")),
+            "birthday": request.form.get("birthday")
+        }
+        mongo.db.users.insert_one(signup)
+        session["user"] = request.form.get("username").lower()
+        flash("You've signed up!")
+        return redirect(url_for("profile", username=session["user"]))
+
+    return render_template("signup.html")
+
+
 @app.route("/reviews")
 def reviews():
     """
