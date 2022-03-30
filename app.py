@@ -26,8 +26,8 @@ def get_books():
     displays them on the site.
     """
     genre = list(mongo.db.genres.find())
-    books = list(mongo.db.books2.find())
-    return render_template("books.html", books2=books, genres=genre)
+    book = list(mongo.db.books2.find())
+    return render_template("books.html", books2=book, genres=genre)
 
 
 @app.route("/reviews")
