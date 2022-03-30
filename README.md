@@ -160,3 +160,25 @@
  - The app.py file provides the backend code that handles the data of the site. It is used for submitting data to the database and pulling information from the database. 
 
  - The env.py file that was created contains information regarding the database and has not been pushed to GitHub.
+
+ ## **The DataBase**
+
+MongoDB is used for the site as it offers a open source document-orientated database. 
+
+- *Structure* The Database has 6 collections described below:
+
+- *Books2* This holds the books that are recommended on the site by the site owner and their authors in their correct genre.
+
+- *genres* is used to connect the dropdown menus' genres on on the homepage to the ones stored in the database.
+
+- *genres2* is used in the dropdown menu on the add-review page to connect the genres with the genre field on the form. Due to 
+technical difficulties, it wasn't possible to connect the genres collection with the form for some reason, so genres2 was created to keep them seperate, as the site was getting errors, and the genres weren't displaying correctly/ were getting mixed up.
+
+- *improvements* collection holds information submitted from the contact us page, including email address to contact the person   with and their feedback.
+
+- *reviews* collection holds the data submitted through the add a review page, this includes, the genre, the name of the book,  
+the name of the person who submitted it, the author and the review itself. 
+
+- *users* holds the information of people who have created accounts to the site. Information collected in this collection on the server includes: username, and their password which can't be read using password_hash encryption. 
+
+PyMongo is currently used to connect the database with the site, as it is simpler to use than other Python frameworks, and was the one I felt most confident using. Originally MongoEngine was going to be used, but due to the different syntax, the project was getting errors and bugs were everywhere.
