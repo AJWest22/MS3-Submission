@@ -32,5 +32,22 @@
                 <strong>{{ review.genre_name }}</strong> : {{ review.book_name }}
             </div>
         </div>
+        <!--Displays a books description, author and who made the review-->
+        <div class="collapsible-body">
+            <p>{{ review.book_description }}</p>
+            <p>{{ review.book_author }}</p>
+            <p><em>by: {{ review.created_by }}</em></p>
+        </div>
+        <div id="modal-{{review._id}}" class="modal">
+            <div class="modal-content">
+              <h4>Confirm Deletion?</h4>
+              <p>Are you sure you want to delete this review?</p>
+            </div>
+            <div class="modal-footer">
+                <a href="{{ url_for('delete_review', reviews_id=review._id) }}" class="btn-small green accent-4">Delete</a>
+            </div>
+        </div>
     </li>
+    {% endfor %}
 </ul>
+{% endblock %}
