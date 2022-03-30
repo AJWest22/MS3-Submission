@@ -17,3 +17,9 @@
     margin: 5px;
     line-height: 42px;
 }
+
+.header-text {
+    text-align: center;
+    font-family: Oswald;
+    font-size: 4em;
+}
