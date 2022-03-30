@@ -31,4 +31,14 @@
         </div>
     </form>
 </div>
+
+<!--If they don't have an account they can follow the link to create an account-->
+<div class="row">
+    <div class="col s12">
+        <p class="center-align">
+            New Here?
+            <a href="{{ url_for('signup') }}" class="light-blue-text-text-darken-4">Create Account</a>
+        </p>
+    </div>
+</div>
 {% endblock %}
