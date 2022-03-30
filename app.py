@@ -30,6 +30,16 @@ def get_books():
     return render_template("books.html", books2=books, genres=genre)
 
 
+@app.route("/reviews")
+def reviews():
+    """
+    Gets and displays the reviews stored on the
+    server and shows them on the site.
+    """
+    review = list(mongo.db.reviews.find())
+    return render_template("reviews.html", reviews=review)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
