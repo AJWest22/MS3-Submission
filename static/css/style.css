@@ -30,3 +30,8 @@
     font-size: 1em;
     margin: 2em;
 }
+
+h1 {
+    font-family: oswald;
+    text-align: center;
+}
