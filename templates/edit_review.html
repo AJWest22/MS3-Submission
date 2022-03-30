@@ -27,7 +27,7 @@
             <div class="input-field col s12">
                 <i class="fas fa-book-open prefix light-blue-text text-darken-4"></i>
                 <input id="book_name" name="book_name" minlength="5" maxlength="50" 
-                   value= "{{ review.book_name }}" type="text" class="validate">
+                   value= "{{ reviews.book_name }}" type="text" class="validate">
                 <label for="book_name">Name of Book:</label>
             </div>
         </div>
@@ -36,7 +36,7 @@
                 <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
                 <textarea id="book_description" name="book_description" minlength="5"
                     maxlength="200" class="materialize-textarea" required>
-                    {{- review.book_description -}}
+                    {{- reviews.book_description -}}
                 </textarea>
                 <label for="book_description">Book Description</label>
             </div>
@@ -46,7 +46,7 @@
                 <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
                 <textarea id="book_author" name="book_author" minlength="5"
                     maxlength="50" class="materialize-textarea" required>
-                    {{- review.book_author -}}
+                    {{- reviews.book_author -}}
                 </textarea>
                 <label for="book_author">Author</label>
             </div>
