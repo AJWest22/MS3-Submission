@@ -92,6 +92,28 @@ def reviews():
     return render_template("reviews.html", reviews=review)
 
 
+@app.route("/add_review", methods=["GET", "POST"])
+def add_review():
+    """
+    Allows users to add a review to the site and
+    stores it on the server.
+    """
+    if request.method == "POST":
+        review = {
+            "genre_name": request.form.get("genre_name"),
+            "book_name": request.form.get("book_name"),
+            "book_author": request.form.get("book_author"),
+            "book_description": request.form.get("book_description"),
+            "created_by": session["user"]
+        }
+        mongo.db.reviews.insert_one(review)
+        flash("Review successfully added")
+        return redirect(url_for("reviews"))
+
+    genres = mongo.db.genres2.find().sort("genre_name", 1)
+    return render_template("add_review.html", genres2=genres)
+
+
 @app.route("/edit_review/<reviews_id>", methods=["GET", "POST"])
 def edit_review(reviews_id):
     """
