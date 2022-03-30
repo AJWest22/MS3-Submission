@@ -18,6 +18,18 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
+@app.route("/")
+@app.route("/get_books")
+def get_books():
+    """
+    Gets the books from the server and
+    displays them on the site.
+    """
+    genre = list(mongo.db.genres.find())
+    books = list(mongo.db.books2.find())
+    return render_template("books.html", books2=books, genres=genre)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
