@@ -40,3 +40,9 @@ h3{
     font-family: Oswald;
     text-align: center;
 }
+
+.carousel-item>img{
+    height: 30em;
+    width: 35em;
+    padding-bottom: 10em;
+}
