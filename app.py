@@ -149,6 +149,16 @@ def edit_review(reviews_id):
     return render_template("edit_review.html", reviews=review, genres2=genres)
 
 
+@app.route("/delete_review/<reviews_id>")
+def delete_review(reviews_id):
+    """
+    Lets users delete their reviews.
+    """
+    mongo.db.reviews.remove({"_id": ObjectId(reviews_id)})
+    flash("Review Deleted")
+    return redirect(url_for("reviews"))
+
+
 @app.route("/contact_page", methods=["GET", "POST"])
 def contact_page():
     """
