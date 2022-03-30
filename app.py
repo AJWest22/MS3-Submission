@@ -96,6 +96,16 @@ def profile(username):
     return redirect(url_for("login"))
 
 
+@app.route("/logout")
+def logout():
+    """
+    Allows users to logout.
+    """
+    flash("You successfully logged out!")
+    session.pop("user")
+    return redirect(url_for("login"))
+
+
 @app.route("/reviews")
 def reviews():
     """
