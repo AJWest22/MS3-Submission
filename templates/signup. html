@@ -39,4 +39,14 @@
             </form>
         </div>
 
+        <!--Asks if a user has an account if they already they are redirected to login page-->
+        <div class="row">
+            <div class="col s12">
+                <p class="center-align">
+                    Already Have An Account?
+                    <a href="{{ url_for('login') }}" class="light-blue-text-text-darken-4">Click here to login!</a>
+                </p>
+            </div>
+        </div>
+        
 {% endblock %}
