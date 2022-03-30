@@ -82,6 +82,20 @@ def login():
     return render_template("login.html")
 
 
+@app.route("/profile/<username>", methods=["GET", "POST"])
+def profile(username):
+    """
+    Displays the users profile and name on
+    the profile page, and gets it from server.
+    """
+    username = mongo.db.users.find_one(
+        {"username": session["user"]})["username"]
+    if session["user"]:
+        return render_template("profile.html", username=username)
+
+    return redirect(url_for("login"))
+
+
 @app.route("/reviews")
 def reviews():
     """
