@@ -151,7 +151,7 @@ def edit_review(reviews_id):
             "book_description": request.form.get("book_description"),
             "created_by": session["user"]
         }
-        mongo.db.reviews.update({"_id": ObjectId(reviews_id)}, submit)
+        mongo.db.reviews.replace_one({"_id": ObjectId(reviews_id)}, submit)
         flash("Review successfully updated")
         return redirect(url_for("reviews"))
     review = mongo.db.reviews.find_one({"_id": ObjectId(reviews_id)})
