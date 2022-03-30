@@ -36,8 +36,8 @@ def reviews():
     Gets and displays the reviews stored on the
     server and shows them on the site.
     """
-    reviews = list(mongo.db.reviews.find())
-    return render_template("reviews.html", reviews=reviews)
+    review = list(mongo.db.reviews.find())
+    return render_template("reviews.html", reviews=review)
 
 
 if __name__ == "__main__":
