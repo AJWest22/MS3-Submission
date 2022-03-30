@@ -92,6 +92,27 @@ def reviews():
     return render_template("reviews.html", reviews=review)
 
 
+@app.route("/edit_review/<reviews_id>", methods=["GET", "POST"])
+def edit_review(reviews_id):
+    """
+    Lets users edit their reviews.
+    """
+    if request.method == "POST":
+        submit = {
+            "genre_name": request.form.get("genre_name"),
+            "book_name": request.form.get("book_name"),
+            "book_author": request.form.get("book_author"),
+            "book_description": request.form.get("book_description"),
+            "created_by": session["user"]
+        }
+        mongo.db.reviews.update({"_id": ObjectId(reviews_id)}, submit)
+        flash("Review successfully updated")
+        return redirect(url_for("reviews"))
+    review = mongo.db.reviews.find_one({"_id": ObjectId(reviews_id)})
+    genres = mongo.db.genres2.find().sort("genre_name", 1)
+    return render_template("edit_review.html", reviews=review, genres2=genres)
+
+
 @app.route("/contact_page", methods=["GET", "POST"])
 def contact_page():
     """
