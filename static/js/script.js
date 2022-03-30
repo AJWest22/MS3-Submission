@@ -3,4 +3,5 @@ $(document).ready(function(){
     $('.collapsible').collapsible();
     $('select').formSelect();
     $('.slider').slider();
+    $('.carousel').carousel();
   });
