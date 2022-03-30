@@ -12,11 +12,11 @@
                 <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
                 <select id="genre_name" name="genre_name" class="validate" required>
                     <option value="" disabled selected>Choose genre</option>
-                    {% for genres2 in genres2 %}
-                        {% if genres2.genre_name == reviews.genre_name %}
-                            <option value="{{ genres2.genre_name }}" selected>{{ genres2.genre_name }}</option>
+                    {% for genres in genres2 %}
+                        {% if genres.genre_name == reviews.genre_name %}
+                            <option value="{{ genres.genre_name }}" selected>{{ genres.genre_name }}</option>
                         {% else %}
-                            <option value="{{ genres2.genre_name }}">{{ genres2.genre_name }}</option>
+                            <option value="{{ genres.genre_name }}">{{ genres.genre_name }}</option>
                         {% endif %}
                     {% endfor %}
                 </select>
@@ -27,7 +27,7 @@
             <div class="input-field col s12">
                 <i class="fas fa-book-open prefix light-blue-text text-darken-4"></i>
                 <input id="book_name" name="book_name" minlength="5" maxlength="50" 
-                   value= "{{ reviews.book_name }}" type="text" class="validate">
+                   value= "{{ review.book_name }}" type="text" class="validate">
                 <label for="book_name">Name of Book:</label>
             </div>
         </div>
@@ -36,7 +36,7 @@
                 <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
                 <textarea id="book_description" name="book_description" minlength="5"
                     maxlength="200" class="materialize-textarea" required>
-                    {{- reviews.book_description -}}
+                    {{- review.book_description -}}
                 </textarea>
                 <label for="book_description">Book Description</label>
             </div>
@@ -46,7 +46,7 @@
                 <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
                 <textarea id="book_author" name="book_author" minlength="5"
                     maxlength="50" class="materialize-textarea" required>
-                    {{- reviews.book_author -}}
+                    {{- review.book_author -}}
                 </textarea>
                 <label for="book_author">Author</label>
             </div>
