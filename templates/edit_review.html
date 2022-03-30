@@ -4,4 +4,63 @@
 <!--Header text-->
 <h3 class="light-blue-text text-darken-4 center-align">Edit Review</h3>
 
+<!--Gets the info of the review on reviews page and copies data across on to edit review page-->
+<div class="row">
+    <form class="col s12" method="POST" action="{{ url_for('edit_review', reviews_id=reviews._id) }}">
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
+                <select id="genre_name" name="genre_name" class="validate" required>
+                    <option value="" disabled selected>Choose genre</option>
+                    {% for genres2 in genres2 %}
+                        {% if genres2.genre_name == reviews.genre_name %}
+                            <option value="{{ genres2.genre_name }}" selected>{{ genres2.genre_name }}</option>
+                        {% else %}
+                            <option value="{{ genres2.genre_name }}">{{ genres2.genre_name }}</option>
+                        {% endif %}
+                    {% endfor %}
+                </select>
+                <label for="genre_name">Book Genre</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-book-open prefix light-blue-text text-darken-4"></i>
+                <input id="book_name" name="book_name" minlength="5" maxlength="50" 
+                   value= "{{ reviews.book_name }}" type="text" class="validate">
+                <label for="book_name">Name of Book:</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                <textarea id="book_description" name="book_description" minlength="5"
+                    maxlength="200" class="materialize-textarea" required>
+                    {{- reviews.book_description -}}
+                </textarea>
+                <label for="book_description">Book Description</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                <textarea id="book_author" name="book_author" minlength="5"
+                    maxlength="50" class="materialize-textarea" required>
+                    {{- reviews.book_author -}}
+                </textarea>
+                <label for="book_author">Author</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 center-align">
+                <a href="{{ url_for('reviews') }}" class="btn-large red text-shadow">
+                    Cancel <i class="fas fa-times-circle right"></i>
+                </a>
+                <button type="submit" class="btn-large light-blue darken-1 text-shadow-1">
+                    Edit Review <i class="fas fa-edit-square right"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
 {% endblock %}
