@@ -55,3 +55,12 @@ h3{
     animation-duration: 3s;
     animation-fill-mode: forwards;
 }
+
+@keyframes review-zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
