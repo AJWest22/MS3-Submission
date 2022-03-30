@@ -81,7 +81,7 @@ def login():
             return redirect(url_for("login"))
     return render_template("login.html")
 
-    
+
 @app.route("/reviews")
 def reviews():
     """
@@ -90,6 +90,22 @@ def reviews():
     """
     review = list(mongo.db.reviews.find())
     return render_template("reviews.html", reviews=review)
+
+
+@app.route("/contact_page", methods=["GET", "POST"])
+def contact_page():
+    """
+    Enables the form on contact page to be submitted
+    to the server.
+    """
+    if request.method == "POST":
+        improvement = {
+            "email": request.form.get("email").lower(),
+            "feedback": request.form.get("feedback").lower()
+        }
+        mongo.db.improvements.insert_one(improvement)
+        flash("Thank you for your feedback")
+    return render_template('contact_page.html')
 
 
 if __name__ == "__main__":
