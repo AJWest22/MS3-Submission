@@ -134,6 +134,12 @@ This is the second version of the site. The original didn't have enough commits,
 
 ### HTML Development
 
+The HTML files form the base structure of the site. A base.html template was used to contain the navbar and other sections that needed to appear on all pages, for example any flash messages. The base.html file also contains the scripts needed for the JQUERY, images, and CSS. Jinja Templating is used to copy the blocks across the various other HTML files/pages. There are 9 HTML files for this project: 
+
+- The base.html file which contains the template for the rest of the HTML files to follow, and contains important parts of the site functionality.
+
+- Books.html which gets the books and genres from the databe and displays them onto the site.
+
 ### CSS Development
 
 ### Python Development
