@@ -334,3 +334,50 @@ This project has some features I would like to add at a later date.
 - 2: Pagination: Pagination was originally going to be used to keep the users reviews displayed in an orderly fashion, however after much research, I couldn't find anything on Pagination for PyMongo, and MongoDB, it was all either using SQL Lite and SQL Alchemy, or MongoEngine instead of PyMongo. 
 
 - 3: Profile picture: Currently a carousel from Materialize CSS is used to display images on the site and they can't chosen by the user, at some pont I'd like to be able to add the option for the user to display their own profile picture on the site instead of relying on the sites images.
+
+## **TESTING**
+
+### HTML Validation
+   - The code was validated using NU HTML Validator and displayed some errors linked to the flask for loops, and the scripts needed for Matertialize CSS, and CSS classes. 
+
+   <details><summary>HTML Validation</summary>
+  <img src="static/images/html-validation.png">
+  </details>
+  
+
+### CSS Validation
+  - The code was tested using The W3C Jigsaw CSS Validation Service and encountered no errors:
+
+  <details><summary>CSS Validation p1</summary>
+  <img src="static/images/css-validation1.png">
+  </details>
+
+  <details><summary>CSS Validation p2</summary>
+  <img src="static/images/css-validation2.png">
+  </details>
+
+
+### Python Validation
+- The code was validated using PEP8 online check, and had several errors to do with whitespace, however when i have debugged these, I have encountered more errors. For example in the PEP8 validator it asks for a new line at the end of file, when I add one in, I get an error saying trailing whitespace.
+
+  <details><summary>Python Validation</summary>
+  <img src="static/images/python-validation.png">
+  </details>
+
+
+### Browser Compatibility
+
+The website has been viewed on the following browsers:
+ - Google Chrome
+ - Mozilla Firefox
+ - Safari
+ - Microsoft Edge
+
+### Devices tested on
+
+The site has been tested on the following devices:
+
+ - iPhone SE 2020
+ - iPad 8th Gen
+ - Acer Aspire 5
+ - iPad 7th Gen
