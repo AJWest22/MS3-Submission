@@ -212,3 +212,20 @@ the name of the person who submitted it, the author and the review itself.
   </details>
 
 PyMongo is currently used to connect the database with the site, as it is simpler to use than other Python frameworks, and was the one I felt most confident using. Originally MongoEngine was going to be used, but due to the different syntax, the project was getting errors and bugs were everywhere.
+
+
+## **Design**
+
+The site was designed to have a more relaxed feel to it, and easy to use. The site uses simpe coloring, fonts and imagery to create and achieve this effect. 
+
+
+### Typography 
+- The site uses Oswald font (imported from google fonts) and Roboto (also imported from Google fonts). The reason for these two  fonts is they are becoming increasingly popular amongst web designers, and also lift the site a bit. For example the header's oswald font creates a bold, dark eye catching effect for the header. The nav bar also has a text-shadow applied to it, again using the Materialize CSS framework, ('text-shadow') to help make it stand out and be more readable against the paler blue background.
+
+
+### Colors 
+ - The site uses predominantly blue coloring, and the code used to make it comes from the color classes in the Materialize CSS framework. The navbar uses the class **blue lighten-4** which has the corresponding hex code of: #bbdefb. The dropdown menus uses the Materialize CSS color class of **blue accent-3**, which has the corresponding hexcode of #2979ff. The sites coloring is a softer tone and is designed to be simple, as reading books should be a relaxing task. 
+
+
+### Images 
+- The images used come from pixabay and pexels, and links to the images are used to connect them to their corresponding place on the site. They are chosen with the book genres in mind, so Game of Thrones and Harry Potter for fantasy, and images of dystopian cities for Sci-Fi.
