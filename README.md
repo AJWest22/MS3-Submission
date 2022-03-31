@@ -381,3 +381,25 @@ The site has been tested on the following devices:
  - iPad 8th Gen
  - Acer Aspire 5
  - iPad 7th Gen
+
+ ## Deployment
+
+- This site was deployed using Heroku using the following steps:
+
+  1. Create a proc.file in your files, and connect to the app.py file.
+  
+  2. Create a requirements.txt file.
+
+  3. Create an account on heroku.com
+
+  4. Create a new application and give it a name. NOTE: This name must be new, and one not already in use.
+
+  5. In the application dashboard, go to the deploy section and connect your application to your chosen GitHub repo, by selecting your repo's name.
+
+  6. Select the branch to enable automatic deploys, (as was done with this project). Alternatively you can set it to deploy manually.
+
+  7. Set key/value pairs for the following keys:IP, MONGO_DBNAME, MONGO_URI, PORT, SECRET_KEY
+
+  8. Return to your dashboard and click deploy.
+
+  9. Once dployed, click open app.
