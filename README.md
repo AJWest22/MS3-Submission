@@ -324,3 +324,13 @@ Site features on this site are: a navbar, contact form, dropdown menus, a signup
 - Contain information stored on the database.
 
 - Icons come from Fontawesome.
+
+## **Features To Be Added**
+
+This project has some features I would like to add at a later date. 
+
+- 1: The ability for users to display their social media pages on their profile. This was attempted but due to time constraints couldn't be done in time. If statements would be used to check if they had any social media, and a flash message to be displayed if they didn't have any, prompting them to add some. 
+
+- 2: Pagination: Pagination was originally going to be used to keep the users reviews displayed in an orderly fashion, however after much research, I couldn't find anything on Pagination for PyMongo, and MongoDB, it was all either using SQL Lite and SQL Alchemy, or MongoEngine instead of PyMongo. 
+
+- 3: Profile picture: Currently a carousel from Materialize CSS is used to display images on the site and they can't chosen by the user, at some pont I'd like to be able to add the option for the user to display their own profile picture on the site instead of relying on the sites images.
