@@ -14,6 +14,10 @@
     1. [Target Audience](#target-audience)
 
 4. [Development Lifecycle](#development-lifecycle)
+    1. [HTML Development](#html-development)
+    2. [CSS Development](#css-development)
+    3. [Python Development](#python-development)
+    4. [JQUERY Development](#jquery-development)
 
 5. [Code Used](#code-used)
     1. [Frameworks](#frameworks)
@@ -123,6 +127,22 @@
 ### **Target Audience**
  - The site is primarily aimed and adults/young adults who are either big readers and want to find thier next book, or people who want to read more but aren't sure what to read.
 
+
+## Development Lifecycle
+
+This is the second version of the site. The original didn't have enough commits, so this is the same site, and code, copied over from the original submission. The following is a brief overview of the development of the site, and contains a list of bugs that were made and corrected. Any current bugs that haven't been solved are recorded in the bugs section of this README. The overview is divided into four sections: Python Development, HTML Development, and CSS Development and JQUERY Development.
+
+### HTML Development
+
+### CSS Development
+
+### Python Development
+
+### JQUERY Development
+
+There were some bugs during development of this site: 
+
+- 1: Originally the a collection was created called 'Books' that was originally intended to hold the books on the database and display them on the site. However due to some technical difficulties, 'Books' was discarded, and 'Books2' was created. 
 
 ## **Code Used**
 
