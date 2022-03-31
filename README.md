@@ -167,18 +167,48 @@ MongoDB is used for the site as it offers a open source document-orientated data
 
 - *Structure* The Database has 6 collections described below:
 
-- *Books2* This holds the books that are recommended on the site by the site owner and their authors in their correct genre.
+- *Books* This was originally used to contain the books for the site, but due to issues with how the data was displaying on the  site, books2 was created. Books has been left in to show the development of the site.
+
+- <details><summary>Books2 Collection which contains data on the books and authors:</summary>
+  <img src="static/images/books.jpg">
+  </details>
+
+- *Books2* This holds the books that are recommended on the site by the site owner and their authors in their correct genre. It is the replacement for books, which had to be discarded due to technical difficulties.
+
+- <details><summary>Books2 Collection which contains data on the books and authors:</summary>
+  <img src="static/images/books2.jpg">
+  </details>
 
 - *genres* is used to connect the dropdown menus' genres on on the homepage to the ones stored in the database.
+
+- <details><summary>Genres holds the data on the genres used in the dropdowns menu on the homepage:</summary>
+  <img src="static/images/genres.jpg">
+  </details>
 
 - *genres2* is used in the dropdown menu on the add-review page to connect the genres with the genre field on the form. Due to 
 technical difficulties, it wasn't possible to connect the genres collection with the form for some reason, so genres2 was created to keep them seperate, as the site was getting errors, and the genres weren't displaying correctly/ were getting mixed up.
 
+- <details><summary>Genres2 holds the data on the genres used in the dropdown menu on the review page:</summary>
+  <img src="static/images/genres2.jpg">
+  </details>
+
 - *improvements* collection holds information submitted from the contact us page, including email address to contact the person   with and their feedback.
+
+- <details><summary>Improvements has the feedback data. The feedback key can also hold question data.</summary>
+  <img src="static/images/improvements.jpg">
+  </details>
 
 - *reviews* collection holds the data submitted through the add a review page, this includes, the genre, the name of the book,  
 the name of the person who submitted it, the author and the review itself. 
 
+- <details><summary>Reviews has the information on the reviews left by users on the site.</summary>
+  <img src="static/images/reviews.jpg">
+  </details>
+
 - *users* holds the information of people who have created accounts to the site. Information collected in this collection on the server includes: username, and their password which can't be read using password_hash encryption. 
+
+- <details><summary>Users has the data on the users of the site, password has been encrypted so can't be read.</summary>
+  <img src="static/images/users.jpg">
+  </details>
 
 PyMongo is currently used to connect the database with the site, as it is simpler to use than other Python frameworks, and was the one I felt most confident using. Originally MongoEngine was going to be used, but due to the different syntax, the project was getting errors and bugs were everywhere.
