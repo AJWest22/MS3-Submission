@@ -229,3 +229,98 @@ The site was designed to have a more relaxed feel to it, and easy to use. The si
 
 ### Images 
 - The images used come from pixabay and pexels, and links to the images are used to connect them to their corresponding place on the site. They are chosen with the book genres in mind, so Game of Thrones and Harry Potter for fantasy, and images of dystopian cities for Sci-Fi.
+
+## **Site Features**
+
+Site features on this site are: a navbar, contact form, dropdown menus, a signup form and a login form, and edit reviews form.  
+
+### **NavBar**
+
+- Is used to offer a way of navigating the site. 
+
+- Is a global element, as it appears on all pages.
+
+- Uses if statements to hide certain pages from users that aren't logged in. For example the add review page is hidden from uses that aren't logged into the site. 
+
+- Contains hidden statements that can only be accessed by clicking on certain buttons, for exmaple the edit button on a review takes you to the edit_review page. 
+
+### **Forms**
+
+- There are several forms on this site: A login form, a signup form, a contact form, a add review form, and a edit review form. 
+
+  - The Login Form:
+
+     - Appears on the login page.
+
+     - Contains fields called: Username and Password.
+
+     - Has a submit button to submit the data to the database.
+
+     - A flash message appears welcoming the user if they login successfully.
+
+     - A flash message appears if the login is unsuccessful, by letting the user know either their username or password was incorrect.
+
+     - Icons are used to add a bit of decoration, and come from fontawesome.
+
+     - All fields are required.
+
+
+  - The Sign Up Form:
+
+     - Appears on the signup page.
+
+     - Contains fields: username, password, and date of birth.
+ 
+     - Has a calender for which user can click to verify their date of birth. 
+
+     - Has a sign up button that submits their data to the database.
+
+     - A flash message appears letting them know the have signed up successfully.
+
+     - All fields are required.
+
+     - Icons are used to add a bit of decoration, and come from fontawesome.
+
+
+  - Contact Form:
+
+     - Appears on the contact page.
+
+     - Users can submit feedback to improve the site, or ask questions on the site.
+
+     - Users dont have to have an account or login to use it.
+ 
+     - Contains fields asking for an email and their feedback/question so they can be contacted directly.
+
+     - Offers a means of direct commnication between the siteowner and users.
+
+     - All fields are required.
+
+     - Icons are used to add a bit of decoration, and come from fontawesome.
+
+
+  - Edit Reviews Form
+
+     - Appears on Edit Review Page.
+
+     - Allows users to edit their reviews.
+
+     - Users can only edit their own reviews, not others.
+
+     - Contains a drop down menu from which users can change the genre if needed.
+
+     - Contains fields including: genre, name of book, book author, book description.
+
+     - Contains an update button.
+
+     - All fields are required.
+ 
+### Dropdown Menus
+
+- Appear on homepage, reviews and add a review pages.
+
+- Offer a bit of interactivity with the site.
+
+- Contain information stored on the database.
+
+- Icons come from Fontawesome.
