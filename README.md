@@ -403,3 +403,56 @@ The site has been tested on the following devices:
   8. Return to your dashboard and click deploy.
 
   9. Once dployed, click open app.
+
+
+## Credits
+
+### Icons
+All icons can be found here: https://fontawesome.com/
+
+### Imagery
+
+All images come from [pixabay](https://pixabay.com/) and [pexels](https://www.pexels.com/)
+
+All links to specific images are as follows:
+
+ - Home page slider images in order:
+   - Fantasy Image: https://images.pexels.com/photos/3359734/pexels-photo-3359734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+
+   - Sci-Fi image: https://images.pexels.com/photos/7709020/pexels-photo-7709020.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+   - Crime Image: https://images.pexels.com/photos/750241/pexels-photo-750241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+   - Thriller Image: https://images.pexels.com/photos/143580/pexels-photo-143580.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+   - Action Image: https://cdn.pixabay.com/photo/2016/03/09/09/18/biking-1245722_1280.jpg
+   - War Image: https://cdn.pixabay.com/photo/2014/10/02/06/34/war-469503_1280.jpg
+   - Non-Fiction Image: https://cdn.pixabay.com/photo/2018/08/15/13/10/galaxy-3608029_1280.jpg
+   - Horror Image: https://cdn.pixabay.com/photo/2017/10/13/14/15/fantasy-2847724_1280.jpg
+
+  - Reviews Page:
+    - https://cdn.pixabay.com/photo/2015/09/05/07/28/writing-923882_1280.jpg
+  
+  - Contact Us Page:
+    - https://cdn.pixabay.com/photo/2017/02/07/00/44/feedback-2044700_1280.jpg
+  
+  - Profile Page Carousel (in order of appearance)
+    - Carousel 1: https://cdn.pixabay.com/photo/2016/10/07/22/15/game-of-thrones-1722710_1280.png
+    - Carousel 2: https://cdn.pixabay.com/photo/2020/11/13/16/51/white-walker-5739181_1280.jpg
+    - Carousel 3: https://cdn.pixabay.com/photo/2019/05/05/15/05/game-of-thrones-4180794_1280.jpg
+    - Carousel 4: https://cdn.pixabay.com/photo/2014/08/14/16/32/harry-potter-418108_1280.jpg
+    - Carousel 5: https://cdn.pixabay.com/photo/2020/03/31/13/29/ufo-4987627_1280.jpg
+
+  
+### CSS Framework
+
+Materialize CSS provided the Jquery and some CSS for this site: https://materializecss.com/ It also helped with making the site mobile responsive.
+
+
+### JQUery Framework
+
+Materialize CSS also provided the JQuery for this site, for the dropdown menus on the homepage and add a review page, the carousel on the profile page, and slider on the homepage. 
+
+
+## Acknowledgements 
+
+- My mentor Tim Nelson for his support and for his feedback.
+
+- My family and friends for testing this site on their devices
