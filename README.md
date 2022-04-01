@@ -130,7 +130,9 @@
 
 ## Development Lifecycle
 
-This is the second version of the site. The original didn't have enough commits, so this is the same site, and code, copied over from the original submission. The following is a brief overview of the development of the site, and contains a list of bugs that were made and corrected. Any current bugs that haven't been solved are recorded in the bugs section of this README. The overview is divided into four sections: Python Development, HTML Development, and CSS Development and JQUERY Development.
+This is the second version of the site. The original didn't have enough commits, so this is the same site, and code, copied over from the original submission. The following is a brief overview of the development of the site, and contains a list of bugs that were made and corrected. Any current bugs that haven't been solved are recorded in the bugs section of this README. The overview is divided into four sections: Python Development, HTML Development, and CSS Development and JQUERY Development. 
+
+There was one bug when setting up the folders and files needed for the site, when initially creating the static folder and the CSS, Images and JS folders, they initially all ran together, and couldn't be seperated. This resulted in long filepaths, and made it harder to use, for example to access the JS for the site, the filepaths was 'static/css/images/js/style.css/script.js'. To oslve this, the folders were deleted before being re-added and and creating each folder individually, then dragging and dropping each folder individually into the main static folder. 
 
 ### HTML Development
 
@@ -160,7 +162,7 @@ Forms are used a lot through the site, and can be found in more detail in the [f
 
 ### CSS Development
 
-MaterializeCSS is used a lot for the design and adding some key features to the site, for example: the slider, and carousel. MaterializeCSS also plays a part in the JQERY used in this site. The CSS design has not changed that much over the course of development, and is near identical to the original site, the only difference being the nav bar color, which was originally a MaterializecSS class called 'blue lighten-4', but is now blue lighten-2.
+MaterializeCSS is used a lot for the design and adding some key features to the site, for example: the slider, and carousel. MaterializeCSS also plays a part in the JQERY used in this site. The CSS design has not changed that much over the course of development, and is near identical to the original site, the only difference being the nav bar color, which was originally a MaterializecSS class called 'blue lighten-4', but is now blue lighten-2. 
 
 ### Python Development
 
