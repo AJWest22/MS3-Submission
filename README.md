@@ -186,6 +186,8 @@ There were some bugs during development of this site:
 
 - 3: There was one instance where the books wouldn't display on the site, this was fixed by changing books2 to book, to match the backend variable.
 
+- 4: There is currently a bug with the carousel, the action image doesn't display for some reason. I have tried adding different images, and taking it out completely and re-adding it, but the image can't be displayed for some reason.
+
 ## **Code Used**
 
  The site is build using:
@@ -486,7 +488,7 @@ All links to specific images are as follows:
    - Sci-Fi image: https://images.pexels.com/photos/7709020/pexels-photo-7709020.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
    - Crime Image: https://images.pexels.com/photos/750241/pexels-photo-750241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
    - Thriller Image: https://images.pexels.com/photos/143580/pexels-photo-143580.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
-   - Action Image: https://cdn.pixabay.com/photo/2016/03/09/09/18/biking-1245722_1280.jpg
+   - Action Image: https://www.pexels.com/photo/man-on-a-motocross-dirt-bike-356289/
    - War Image: https://cdn.pixabay.com/photo/2014/10/02/06/34/war-469503_1280.jpg
    - Non-Fiction Image: https://cdn.pixabay.com/photo/2018/08/15/13/10/galaxy-3608029_1280.jpg
    - Horror Image: https://cdn.pixabay.com/photo/2017/10/13/14/15/fantasy-2847724_1280.jpg
