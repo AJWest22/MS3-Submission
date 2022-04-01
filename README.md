@@ -160,6 +160,8 @@ Forms are used a lot through the site, and can be found in more detail in the [f
 
 ### CSS Development
 
+MaterializeCSS is used a lot for the design and adding some key features to the site, for example: the slider, and carousel. MaterializeCSS also plays a part in the JQERY used in this site.
+
 ### Python Development
 
 ### JQUERY Development
