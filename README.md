@@ -170,6 +170,8 @@ MaterializeCSS is used a lot for the design and adding some key features to the 
 The Python was the hardest part of this site to make. Some of the variables were changed during the site's development to make the code more readable, and this created several bugs. For example when getting the genres from the databse to display on the site, the code used was initially: genres = list(mongo.db.genres.find()) and genres=genres in the app.py file, and then '{% for genres in genres %} in the books.html file. Due to this being considered ba dcoding practise, it was then changed to 'genre' to make the code more readble and easier to follow. So it is now: genre = list(mongo.db.genres.find()) and {% for genre in genres %}.
 When this was initially done, the genres didn't display in the dropdown menu on the homepage, this was corrected by checking the for loop, and correcting it.
 
+There are functions for most things on the site, the user can interact with For example a function for getting the books, and for logging in/out and signing up. 
+
 ### JQUERY Development
 
 ### Bugs
@@ -177,6 +179,10 @@ When this was initially done, the genres didn't display in the dropdown menu on 
 There were some bugs during development of this site: 
 
 - 1: Originally the a collection was created called 'Books' that was originally intended to hold the books on the database and display them on the site. However due to some technical difficulties, 'Books' was discarded, and 'Books2' was created. 
+
+- 2: During the Python development there were several issues with the reviews CRUD functionality. An error appears saying review wasn't defined, this was fixed by updating it to 'reviews', to match the backend variable.
+
+- 3: There was one instance where the books wouldn't display on the site, this was fixed by changing books2 to book, to match the backend variable.
 
 ## **Code Used**
 
