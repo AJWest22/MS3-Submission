@@ -140,6 +140,24 @@ The HTML files form the base structure of the site. A base.html template was use
 
 - Books.html which gets the books and genres from the databe and displays them onto the site.
 
+- signup.html has a form that is used to sign up new users to the site.
+
+- login.html which holds the form used by users to login to the site and view their profile. 
+
+- profile.html holds a user's profile page, at the moment it is very basic styling, and at some point I would like to edit this and add more features, such as a customizable profile picture.
+
+- reviews.html gets the reviews on the databse, and displays them on the site.
+
+- add_review.html adds a new review to the database, which can then be displayed on the reviews page
+
+- edit_review.html is used to allow users to edit their reviews.
+
+- delete_review.html allows users to delete their reviews.
+
+- contact_page.html is used to submit suggestions to improve the site. 
+
+Forms are used a lot through the site, and can be found in more detail in the [forms](#forms) section of this README.
+
 ### CSS Development
 
 ### Python Development
