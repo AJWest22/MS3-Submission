@@ -160,7 +160,7 @@ Forms are used a lot through the site, and can be found in more detail in the [f
 
 ### CSS Development
 
-MaterializeCSS is used a lot for the design and adding some key features to the site, for example: the slider, and carousel. MaterializeCSS also plays a part in the JQERY used in this site.
+MaterializeCSS is used a lot for the design and adding some key features to the site, for example: the slider, and carousel. MaterializeCSS also plays a part in the JQERY used in this site. The CSS design has not changed that much over the course of development, and is near identical to the original site, the only difference being the nav bar color, which was originally a MaterializecSS class called 'blue lighten-4', but is now blue lighten-2.
 
 ### Python Development
 
