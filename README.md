@@ -18,6 +18,7 @@
     2. [CSS Development](#css-development)
     3. [Python Development](#python-development)
     4. [JQUERY Development](#jquery-development)
+    5. [bugs](#bugs)
 
 5. [Code Used](#code-used)
     1. [Frameworks](#frameworks)
@@ -166,7 +167,12 @@ MaterializeCSS is used a lot for the design and adding some key features to the 
 
 ### Python Development
 
+The Python was the hardest part of this site to make. Some of the variables were changed during the site's development to make the code more readable, and this created several bugs. For example when getting the genres from the databse to display on the site, the code used was initially: genres = list(mongo.db.genres.find()) and genres=genres in the app.py file, and then '{% for genres in genres %} in the books.html file. Due to this being considered ba dcoding practise, it was then changed to 'genre' to make the code more readble and easier to follow. So it is now: genre = list(mongo.db.genres.find()) and {% for genre in genres %}.
+When this was initially done, the genres didn't display in the dropdown menu on the homepage, this was corrected by checking the for loop, and correcting it.
+
 ### JQUERY Development
+
+### Bugs
 
 There were some bugs during development of this site: 
 
