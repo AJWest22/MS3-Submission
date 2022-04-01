@@ -174,6 +174,8 @@ There are functions for most things on the site, the user can interact with For 
 
 ### JQUERY Development
 
+The JQUERY used for this site comes from MaterializeCSS, and is used to add interactivity to the site. For example the slider and the carousel. 
+
 ### Bugs
 
 There were some bugs during development of this site: 
@@ -202,7 +204,7 @@ There were some bugs during development of this site:
  friendly, and also to challenge myself with learning a new framework. Materialize may help with styling, but there can be some
  speificity issues when using it. For example some issues I had with using it included: trying to size images in the carousel, and the header images on the home and reviews pages. (The former has been resolved, but the latter is still not fullwidth). 
 
- - *FLASK* is a framework and is used to help with the structuring of Python, and can be seen in the site using the for loops on the homepage that get the books from the server {% for books in books2 %}
+ - *FLASK* is a framework and is used to help with the structuring of Python, and can be seen in the site using the for loops on the homepage that get the books from the server {% for book in books2 %}
 
  - *Jinja Template* is used to render the templates and write code similar to Python. For example: render_template(signup.html)
 
