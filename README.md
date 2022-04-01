@@ -174,7 +174,7 @@ There are functions for most things on the site, the user can interact with For 
 
 ### JQUERY Development
 
-The JQUERY used for this site comes from MaterializeCSS, and is used to add interactivity to the site. For example the slider and the carousel. 
+The JQUERY used for this site comes from MaterializeCSS, and is used to add interactivity to the site. For example the slider and the carousel. The JQUERY can be found on MaterializeCSS site, at the bottom of each module. 
 
 ### Bugs
 
